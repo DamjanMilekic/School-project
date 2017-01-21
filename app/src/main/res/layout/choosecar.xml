@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#b8adad">
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCars"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnForward"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RadioButton
+            android:text="Dizel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:id="@+id/radiodiesel"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Benzin"
+            android:layout_width="82dp"
+            android:layout_height="90dp"
+            android:id="@+id/radiobenzin" />
+
+        <RadioButton
+            android:text="Hybrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiohibrid"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/listiq"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerCars" />
+
+    <Button
+        android:text="Prosledi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnForward"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/audi"
+        android:background="#b8adad"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/btnForward"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
